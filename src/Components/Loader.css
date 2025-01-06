@@ -1,0 +1,21 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #020617; /* slate-950 */
+  z-index: 9999;
+}
+
+/* Apply custom text styling for the loader */
+.custom-loader .slab-text {
+  font-size: 5rem !important; /* Very large text */
+  font-weight: bold !important; /* Make text bold */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #22D3EE !important; /* cyan-400 */
+}
