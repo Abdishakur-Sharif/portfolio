@@ -33,7 +33,7 @@ Make sure you have the following installed on your system:
 1.  Clone the repository:
     
     ```bash
-    git clone https://github.com/yourusername/portfolio.git
+    git clone git@github.com:Abdishakur-Sharif/portfolio.git
     
     ```
     
