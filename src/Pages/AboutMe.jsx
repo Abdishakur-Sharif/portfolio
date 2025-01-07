@@ -1,21 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+const staggerContainer = {
+  hidden: { opacity: 1 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+};
 
 function AboutMe() {
   return (
-    <section className="bg-slate-950 text-white min-h-screen px-4 font-nohemi">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="bg-slate-950 text-white min-h-screen px-4 font-nohemi"
+    >
       {/* About Me Section */}
-      <div className="max-w-7xl w-full mx-auto py-16 px-6">
+      <motion.div
+        className="max-w-7xl w-full mx-auto py-16 px-6"
+        variants={staggerContainer}
+      >
         {/* Title */}
-        <div className="text-center mb-12">
+        <motion.div className="text-center mb-12" variants={fadeInUp}>
           <h2 className="text-5xl md:text-6xl font-bold text-cyan-500">
             About Me
           </h2>
-        </div>
+        </motion.div>
 
         {/* Content Section */}
-        <div className="space-y-12">
+        <motion.div className="space-y-12" variants={staggerContainer}>
           {/* Text */}
-          <div className="space-y-6">
+          <motion.div className="space-y-6" variants={fadeInUp}>
             <p className="text-lg md:text-xl leading-relaxed">
               I am a passionate junior full-stack developer who began my coding
               journey in 2024 through an intensive 6-month bootcamp. This
@@ -32,21 +51,27 @@ function AboutMe() {
               possibilities, whether it's building dynamic front-end interfaces
               or creating scalable back-end systems.
             </p>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
 
       {/* Experience Section */}
-      <div className="max-w-7xl w-full mx-auto py-16 px-6">
+      <motion.div
+        className="max-w-7xl w-full mx-auto py-16 px-6"
+        variants={staggerContainer}
+      >
         {/* Title */}
-        <div className="text-center mb-12">
+        <motion.div className="text-center mb-12" variants={fadeInUp}>
           <h2 className="text-5xl md:text-6xl font-bold text-cyan-500">
             Experience
           </h2>
-        </div>
+        </motion.div>
 
         {/* Text */}
-        <div className="text-center md:text-left md:w-2/3 mx-auto space-y-6">
+        <motion.div
+          className="text-center md:text-left md:w-2/3 mx-auto space-y-6"
+          variants={fadeInUp}
+        >
           <p className="text-lg md:text-xl leading-relaxed">
             Error 404: Not Found. That's right—I currently have no professional
             experience in the industry. However, what I lack in experience, I
@@ -60,9 +85,9 @@ function AboutMe() {
             ability to contribute meaningfully to a team and tackle challenges
             head-on.
           </p>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 }
 
