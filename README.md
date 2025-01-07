@@ -90,6 +90,12 @@ To deploy the website, follow these steps:
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+## Permissions
+
+I'm cool with anyone using the code or parts of the code for their own site, it is open source so people can learn from it and adapt it. However, I would encourage you to modify the theme and components to make it your own. If you are using the site's design largely unmodified, I'd appreciate being credited as the designer of the website.
+
+I do not give permission to present any of my projects as your own (this is being actively used as my portfolio site and these are my real projects I've worked on).
+
 ## Contact
 
 Feel free to reach out if you have any questions or feedback:
