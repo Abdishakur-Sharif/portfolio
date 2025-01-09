@@ -17,9 +17,7 @@ export default {
       },
       fontFamily: {
         sans: ["CustomFont", "sans-serif"], // Add your custom font
-        bebas: ["CustomFont"], // Alias for direct usage
         nohemi: ["Nohemi", "sans-serif"],
-        generalsans: ["General Sans", "sans-serif"],
       },
     },
   },

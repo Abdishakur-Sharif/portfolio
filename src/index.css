@@ -1,13 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-  font-family: 'CustomFont';
-  src: url('/assets/fonts/Bebas.woff2') format('woff2'),
-       url('/assets/fonts/Bebas.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: 'Nohemi';
@@ -20,14 +14,3 @@ body {
   font-family: 'Nohemi', sans-serif;
 }
 
-
-@font-face {
-  font-family: 'General Sans';
-  src: url('/src/assets/fonts/GeneralSans-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-body {
-  font-family: 'General Sans', sans-serif;
-}
